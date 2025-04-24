@@ -1,29 +1,3 @@
-# download_pinterest_html.py
-
-"""
-Download raw HTML from a Pinterest board using HTTPS.
-
-Access Method: HTTPS (HTTP GET request)
-
-Pros:
-- Direct access to full page source
-- Simple and lightweight
-- Great for saving snapshots or offline analysis
-
-Cons:
-- Doesn’t extract or interpret content
-- Might be blocked or rate-limited by the website
-
-Instructions:
-1. Run this in Google Colab or locally.
-2. If needed, install `requests` using pip.
-
-To install:
-!pip install requests
-"""
-
-import requests
-
 def download_raw_html():
     url = "https://www.pinterest.com/?boardId=335377572190761283"
     headers = {
@@ -41,3 +15,24 @@ def download_raw_html():
 
 if __name__ == "__main__":
     download_raw_html()
+Downloaded HTML (first 20 lines):
+<!DOCTYPE html><html class="en" lang="en"><head><meta charSet="utf-8"/><meta content="width=device-width, initial-scale=1" id="viewport" name="viewport"/><meta content="AobcHP0Riuw7qx+GcJ79jLXxzvz+vbYglMh02KHK8du7LYn9e2JLytVX5ABrS3PMoEeAZ5HxTvNW05uVVfni5gEAAAByeyJvcmlnaW4iOiJodHRwczovL3BpbnRlcmVzdC5jb206NDQzIiwiZmVhdHVyZSI6IkxvbmdBbmltYXRpb25GcmFtZVRpbWluZyIsImV4cGlyeSI6MTcxNjk0MDc5OSwiaXNTdWJkb21haW4iOnRydWV9" http-equiv="origin-trial"/><meta content="default-src &#x27;self&#x27; blob: s.pinimg.com; font-src &#x27;self&#x27; m.media-amazon.com *.amazon-adsystem.com s.pinimg.com data: fonts.googleapis.com fonts.gstatic.com use.typekit.net; style-src &#x27;self&#x27; blob: &#x27;unsafe-inline&#x27; data: *.pinimg.com *.pinterest.com accounts.google.com fonts.googleapis.com; img-src blob: data: *; base-uri &#x27;none&#x27;; connect-src &#x27;self&#x27; blob: m.media-amazon.com *.amazon-adsystem.com *.ada.support *.pinimg.com *.pinterest.com accounts.google.com *.facebook.com www.recaptcha.net www.googleapis.com *.dropboxapi.com pinterest-media-upload.s3.amazonaws.com pinterest-media-upload.s3.us-east-1.amazonaws.com pinterest-media-upload.s3-accelerate.amazonaws.com pinterest-media-upload.s3-accelerate.us-east-1.amazonaws.com pinterest-waterloo.s3.amazonaws.com pinterest-waterloo.s3.us-east-1.amazonaws.com *.cedexis.com *.cedexis-radar.net *.tvpixel.com api.pinadmin.com *.live-video.net https://*.daily.co https://*.pluot.blue wss://*.wss.daily.co; form-action &#x27;self&#x27;; frame-src &#x27;self&#x27; *.ada.support *.pinimg.com *.pinterest.com *.google.com *.facebook.com www.recaptcha.net pinterest-sim-toontown.s3.amazonaws.com pinterest-sim-toontown.s3.us-east-1.amazonaws.com pinterest-waterloo.s3.amazonaws.com pinterest-waterloo.s3.us-east-1.amazonaws.com *.pinterdev.com content.googleapis.com *.youtube.com *.youtube-nocookie.com *.ytimg.com player.vimeo.com calendly.com vine.co bid.g.doubleclick.net *.fls.doubleclick.net servedby.flashtalking.com pinterest-uk.admo.tv pinterest-uk-web.admo.tv fbrpc://call *.linkedin.com px.ads.linkedin.com; media-src &#x27;self&#x27; blob: m.media-amazon.com data: *.pinimg.com *.live-video.net; object-src &#x27;self&#x27;; script-src &#x27;self&#x27; blob: &#x27;unsafe-inline&#x27; *.pinimg.com *.pinterest.com &#x27;report-sample&#x27; *.google.com connect.facebook.net *.google-analytics.com *.facebook.com *.googleadservices.com *.doubleclick.net *.googletagmanager.com radar.cedexis.com *.cedexis-test.com www.gstatic.com/recaptcha/ www.gstatic.cn/recaptcha/ www.recaptcha.net &#x27;wasm-unsafe-eval&#x27;; worker-src &#x27;self&#x27; blob: &#x27;unsafe-inline&#x27;" http-equiv="Content-Security-Policy" id="csp"/><meta content="on" http-equiv="x-dns-prefetch-control"/><link href="https://s.pinimg.com/webapp/logo_transparent_144x144-3da7a67b.png" rel="apple-touch-icon"/><link color="var(--color-red-pushpin-450)" href="https://s.pinimg.com/webapp/pinterest_favicon-70db4fa7.svg" rel="mask-icon" sizes="any"/><link href="https://s.pinimg.com/webapp/favicon_48x48-7470a30d.png" rel="icon"/><link href="https://chrome.google.com/webstore/detail/gpdjojdkbbmdfjfahjcgigfpmkopogic" rel="chrome-webstore-item"/><link href="/opensearch.xml" rel="search" title="Pinterest" type="application/opensearchdescription+xml"/><link href="https://c.aps.amazon-adsystem.com" rel="preconnect"/><link href="/manifest.json" rel="manifest"/><meta content="Pinterest" name="application-name"/><meta content="#ffffff" name="msapplication-TileColor"/><meta content="https://s.pinimg.com/webapp/logo_transparent_144x144-3da7a67b.png" name="msapplication-TileImage"/><meta content="origin" name="referrer"/><meta content="274266067164" property="fb:app_id"/><meta content="Pinterest" property="og:site_name"/><title>Pinterest</title><meta content="Pinterest" data-app="true" name="al:android:app_name" property="al:android:app_name"/><meta content="com.pinterest" data-app="true" name="al:android:package" property="al:android:package"/><meta content="pinterest://" data-app="true" name="al:android:url" property="al:android:url"/><meta content="Pinterest" data-app="true" name="al:ios:app_name" property="al:ios:app_name"/><meta content="429047995" data-app="true" name="al:ios:app_store_id" property="al:ios:app_store_id"/><meta content="pinterest://feed/home" data-app="true" name="al:ios:url" property="al:ios:url"/><meta content="Discover recipes, home ideas, style inspiration and other ideas to try." data-app="true" name="description" property="description"/><meta content="Discover recipes, home ideas, style inspiration and other ideas to try." data-app="true" name="og:description" property="og:description"/><meta content="https://s.pinimg.com/images/facebook_share_image.png" data-app="true" name="og:image" property="og:image"/><meta content="Pinterest" data-app="true" name="og:title" property="og:title"/><meta content="website" data-app="true" name="og:type" property="og:type"/><meta content="https://www.pinterest.com/" data-app="true" name="og:url" property="og:url"/><meta content="nohover" data-app="true" name="pinterest" property="pinterest"/><meta content="#FFFFFF" data-app="true" name="theme-color" property="theme-color"/><meta content="com.pinterest" data-app="true" name="twitter:app:android" property="twitter:app:android"/><meta content="429047995" data-app="true" name="twitter:app:id:ipad" property="twitter:app:id:ipad"/><meta content="429047995" data-app="true" name="twitter:app:id:iphone" property="twitter:app:id:iphone"/><meta content="pinterest://" data-app="true" name="twitter:app:url:googleplay" property="twitter:app:url:googleplay"/><meta content="pinterest://feed/home" data-app="true" name="twitter:app:url:ipad" property="twitter:app:url:ipad"/><meta content="pinterest://feed/home" data-app="true" name="twitter:app:url:iphone" property="twitter:app:url:iphone"/><meta content="summary_large_image" data-app="true" name="twitter:card" property="twitter:card"/><meta content="@pinterest" data-app="true" name="twitter:site" property="twitter:site"/><link href="https://www.pinterest.com/" rel="canonical"/><link href="ios-app://429047995/pinterest/feed/home" rel="alternate"/><link href="android-app://com.pinterest/pinterest/" rel="alternate"/><link href="https://ar.pinterest.com/" rel="alternate" hrefLang="es-AR"/><link href="https://at.pinterest.com/" rel="alternate" hrefLang="de-AT"/><link href="https://au.pinterest.com/" rel="alternate" hrefLang="en-AU"/><link href="https://br.pinterest.com/" rel="alternate" hrefLang="pt"/><link href="https://ca.pinterest.com/" rel="alternate" hrefLang="en-CA"/><link href="https://ch.pinterest.com/" rel="alternate" hrefLang="en-CH"/><link href="https://cl.pinterest.com/" rel="alternate" hrefLang="es-CL"/><link href="https://co.pinterest.com/" rel="alternate" hrefLang="es-CO"/><link href="https://cz.pinterest.com/" rel="alternate" hrefLang="cs"/><link href="https://de.pinterest.com/" rel="alternate" hrefLang="de"/><link href="https://dk.pinterest.com/" rel="alternate" hrefLang="da"/><link href="https://es.pinterest.com/" rel="alternate" hrefLang="es"/><link href="https://fi.pinterest.com/" rel="alternate" hrefLang="fi"/><link href="https://fr.pinterest.com/" rel="alternate" hrefLang="fr"/><link href="https://uk.pinterest.com/" rel="alternate" hrefLang="en-GB"/><link href="https://gr.pinterest.com/" rel="alternate" hrefLang="el"/><link href="https://hu.pinterest.com/" rel="alternate" hrefLang="hu"/><link href="https://id.pinterest.com/" rel="alternate" hrefLang="id"/><link href="https://ie.pinterest.com/" rel="alternate" hrefLang="en-IE"/><link href="https://in.pinterest.com/" rel="alternate" hrefLang="en-IN"/><link href="https://it.pinterest.com/" rel="alternate" hrefLang="it"/><link href="https://jp.pinterest.com/" rel="alternate" hrefLang="ja"/><link href="https://kr.pinterest.com/" rel="alternate" hrefLang="ko"/><link href="https://mx.pinterest.com/" rel="alternate" hrefLang="es-MX"/><link href="https://nl.pinterest.com/" rel="alternate" hrefLang="nl"/><link href="https://nz.pinterest.com/" rel="alternate" hrefLang="en-NZ"/><link href="https://no.pinterest.com/" rel="alternate" hrefLang="nb"/><link href="https://ph.pinterest.com/" rel="alternate" hrefLang="tl-PH"/><link href="https://pl.pinterest.com/" rel="alternate" hrefLang="pl"/><link href="https://pt.pinterest.com/" rel="alternate" hrefLang="pt-PT"/><link href="https://ro.pinterest.com/" rel="alternate" hrefLang="ro-RO"/><link href="https://ru.pinterest.com/" rel="alternate" hrefLang="ru"/><link href="https://se.pinterest.com/" rel="alternate" hrefLang="sv"/><link href="https://sk.pinterest.com/" rel="alternate" hrefLang="sk"/><link href="https://tr.pinterest.com/" rel="alternate" hrefLang="tr"/><link href="https://za.pinterest.com/" rel="alternate" hrefLang="en-ZA"/><link href="https://www.pinterest.com/" rel="alternate" hrefLang="en"/><meta content="EHuaQjeW5iQHyUZ4acPmFVnA62zbptmxbWITj9pDgBU" id="google-site-verification" name="google-site-verification"/><script nonce="e621c32ddafa87fc0afa8528cf8d9fe7">
+          let cspReportsCount = 0;
+          document.addEventListener('securitypolicyviolation', async (event) => {
+            if (event.originalPolicy.includes('report-uri') || cspReportsCount >= 500) {
+              return;
+            }
+            cspReportsCount += 1;
+            await fetch('/_/_/csp_report/', {
+              method: 'POST',
+              body: JSON.stringify({
+                'csp-report': {
+                  'blocked-uri': event.blockedURI,
+                  'column-number': event.columnNumber,
+                  disposition: event.disposition,
+                  'document-uri': event.documentURI,
+                  'effective-directive': event.effectiveDirective,
+                  'line-number': event.lineNumber,
+                  'original-policy': event.originalPolicy,
+                  referrer: event.referrer,
+                  sample: event.sample,
