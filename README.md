@@ -1,21 +1,29 @@
-# IMT542_I4
 # Info Access Demo
 
-This project demonstrates accessing three types of information using different access technologies:
+This project demonstrates how to access different types of information using various access technologies in Python. It’s useful for learning how to work with local files, web APIs, and basic web scraping.
 
-- **JSON** via API
-- **HTML** via web scraping
-- **CSV** via local file
+## Data Types and Access Methods
 
-## Files
+1. **CSV** - Accessed locally with pandas
+2. **JSON** - Accessed via a public API
+3. **HTML** - Accessed via web scraping using BeautifulSoup
 
-- `info_access_demo.py` — Main script
-- `U.S._Chronic_Disease_Indicators.csv` — Sample dataset
-- `README.md` — Setup instructions
+---
 
-## Setup Instructions
+## ✅ 1. Accessing a Local CSV File
 
-1. Clone this repo:
-   ```bash
-   git clone https://github.com/YOUR_USERNAME/info-access-demo.git
-   cd info-access-demo
+### File:
+- `U.S._Chronic_Disease_Indicators.csv`
+- `access_csv.py`
+
+### Instructions:
+1. Install required library:
+
+2. Run the script:
+   
+Make sure the CSV file is in the same folder as the script.
+---
+## 📦 Coming Soon
+
+- `access_json.py` – Reading data from a public JSON API
+- `access_html.py` – Scraping data from a webpage
