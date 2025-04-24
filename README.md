@@ -45,21 +45,30 @@ if __name__ == "__main__":
     access_csv_local()
 
 
-# Pinterest HTML Downloader
+## 🌐 Access Method: Pinterest HTML Download via HTTP
 
-This script uses a simple HTTPS request to download the raw HTML of a Pinterest board page. It is designed to demonstrate accessing a webpage using HTTP in Python.
+This script uses a simple HTTPS request to download the raw HTML of a Pinterest board page. It is designed to demonstrate accessing a webpage using HTTP in Python. The URL is: https://www.pinterest.com/?boardId=335377572190761283 
 
-## 🔗 Target URL
+### 📄 Information Structure: HTML
+- We retrieve the full HTML source code of the page.
+- No parsing is done — this is a raw download and preview.
 
-- https://www.pinterest.com/?boardId=335377572190761283
+### 🔌 Access Technology: HTTP over the Web
+- Uses the `requests` library to simulate a browser and fetch the page.
+- Sends headers to avoid being blocked by bot protection.
 
-## ⚙️ What It Does
+### ✅ Pros
+- Simple and lightweight — no need for API keys or credentials.
+- Allows full access to public page content, useful for saving snapshots or debugging.
+- Doesn’t rely on the availability of structured APIs.
 
-- Sends an HTTP GET request to the Pinterest board
-- Downloads the raw HTML of the page
-- Prints the first 20 lines of the HTML for preview
+### ⚠️ Cons
+- The content is **not structured** — you need to parse the HTML if you want to extract specific information.
+- Can be **blocked by anti-bot mechanisms** or rate limits.
+- Fragile if the webpage structure changes — not ideal for long-term scraping.
+- Terms of service for some websites (like Pinterest) may prohibit scraping or automated access — always check.
 
-## ✅ Technologies Used
-
-- Python 3
-- `requests` library
+### 💡 Use Cases
+- Downloading raw pages for offline viewing
+- Snapshots of dynamic public pages for research or testing
+- Input for a later HTML parsing workflow (e.g. BeautifulSoup)
