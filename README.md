@@ -10,7 +10,7 @@ This project demonstrates how to access different types of information using var
 
 ---
 
-## ✅ 1. Accessing a Local CSV File
+## ✅ Example 1: Accessing a Local CSV File
 
 ### File:
 - `U.S._Chronic_Disease_Indicators.csv`
@@ -44,8 +44,7 @@ def access_csv_local():
 if __name__ == "__main__":
     access_csv_local()
 
-
-## 🌐 Access Method: Pinterest HTML Download via HTTP
+## 🌐 Example 2: Pinterest HTML Download via HTTP
 
 This script uses a simple HTTPS request to download the raw HTML of a Pinterest board page. It is designed to demonstrate accessing a webpage using HTTP in Python. The URL is: https://www.pinterest.com/?boardId=335377572190761283 
 
@@ -72,3 +71,18 @@ This script uses a simple HTTPS request to download the raw HTML of a Pinterest 
 - Downloading raw pages for offline viewing
 - Snapshots of dynamic public pages for research or testing
 - Input for a later HTML parsing workflow (e.g. BeautifulSoup)
+
+## 🌍 Example 3: XML via API (European Central Bank)
+
+### Information Structure: XML  
+### Access Technology: HTTP API Request
+
+This script fetches the latest currency exchange rates from the European Central Bank in XML format and prints a few sample rates.
+
+**Pros**
+- Structured and machine-readable
+- Ideal for consistent, repeatable access to legacy data
+
+**Cons**
+- XML is more verbose than JSON
+- Requires XML parsing (not human-readable out of the box)
