@@ -15,15 +15,3 @@ This project demonstrates how to access different types of information using var
 ### File:
 - `U.S._Chronic_Disease_Indicators.csv`
 - `access_csv.py`
-
-### Instructions:
-1. Install required library:
-
-2. Run the script:
-   
-Make sure the CSV file is in the same folder as the script.
----
-## 📦 Coming Soon
-
-- `access_json.py` – Reading data from a public JSON API
-- `access_html.py` – Scraping data from a webpage
