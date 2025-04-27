@@ -18,7 +18,6 @@ Each example includes:
 ---
 
 ## 🌐 Example 1: Pinterest HTML Download via HTTP
-
 **Information Structure:** HTML  
 **Access Technology:** HTTP Request (Web Download)
 
@@ -51,9 +50,9 @@ def download_pinterest_page():
 if __name__ == "__main__":
     download_pinterest_page()
 
-🌍 Example 2: XML via API (European Central Bank)
-Information Structure: XML
-Access Technology: API Connection Over HTTP
+## 🌍 Example 2: XML via API (European Central Bank)
+**Information Structure:** XML
+**Access Technology:** API Connection Over HTTP
 
 python
 Copy
@@ -90,9 +89,9 @@ def access_xml_api():
 if __name__ == "__main__":
     access_xml_api()
 
-📊 Example 3: CSV File Access (U.S. Chronic Disease Indicators)
-Information Structure: CSV
-Access Technology: Manual File Download and Local Read
+##📊 Example 3: CSV File Access (U.S. Chronic Disease Indicators)
+**Information Structure:** CSV
+**Access Technology:** Manual File Download and Local Read
 
 python
 Copy
@@ -114,7 +113,8 @@ try:
     print(df[['YearStart', 'LocationDesc', 'Topic', 'DataValue']].head())
 except FileNotFoundError:
     print("CSV file not found. Make sure 'U.S._Chronic_Disease_Indicators.csv' is in the directory.")
-🚀 Setup Instructions
+
+##🚀 Setup Instructions
 1. Environment
 Python 3.8 or higher
 
