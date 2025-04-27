@@ -50,7 +50,7 @@ def download_pinterest_page():
 if __name__ == "__main__":
     download_pinterest_page()
 
-## 🌍 Example 2: XML via API (European Central Bank)
+🌍 Example 2: XML via API (European Central Bank)
 **Information Structure:** XML
 **Access Technology:** API Connection Over HTTP
 
@@ -89,7 +89,7 @@ def access_xml_api():
 if __name__ == "__main__":
     access_xml_api()
 
-##📊 Example 3: CSV File Access (U.S. Chronic Disease Indicators)
+📊 Example 3: CSV File Access (U.S. Chronic Disease Indicators)
 **Information Structure:** CSV
 **Access Technology:** Manual File Download and Local Read
 
