@@ -1,4 +1,4 @@
-Information Access Examples
+Information Access Examples:
 This project demonstrates accessing different information structures (HTML, XML, CSV) using different access technologies (HTTP download, API connection, local file read) in Python.
 
 Each example includes:
