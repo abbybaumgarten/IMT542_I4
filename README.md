@@ -76,7 +76,7 @@ import xml.etree.ElementTree as ET
 # - Structured, machine-readable format
 # - No authentication required
 # - Reliable source for real-time data
-
+#
 # Cons:
 # - XML is more verbose and complex than JSON
 # - Requires parsing with an XML library
