@@ -50,6 +50,7 @@ def download_pinterest_page():
 
 if __name__ == "__main__":
     download_pinterest_page()
+
 🌍 Example 2: XML via API (European Central Bank)
 Information Structure: XML
 Access Technology: API Connection Over HTTP
@@ -88,6 +89,7 @@ def access_xml_api():
 
 if __name__ == "__main__":
     access_xml_api()
+
 📊 Example 3: CSV File Access (U.S. Chronic Disease Indicators)
 Information Structure: CSV
 Access Technology: Manual File Download and Local Read
@@ -112,3 +114,30 @@ try:
     print(df[['YearStart', 'LocationDesc', 'Topic', 'DataValue']].head())
 except FileNotFoundError:
     print("CSV file not found. Make sure 'U.S._Chronic_Disease_Indicators.csv' is in the directory.")
+🚀 Setup Instructions
+1. Environment
+Python 3.8 or higher
+
+Install required libraries:
+
+bash
+Copy
+Edit
+pip install requests pandas
+2. CSV Setup
+Download the CSV file:
+U.S. Chronic Disease Indicators Dataset
+
+Rename the file to:
+
+Copy
+Edit
+U.S._Chronic_Disease_Indicators.csv
+Place the file in the same folder as your Python script.
+
+3. Running Examples
+Open each Python file (or copy code into Colab/VSCode)
+
+Run them individually
+
+Make sure U.S._Chronic_Disease_Indicators.csv is present for the CSV example
