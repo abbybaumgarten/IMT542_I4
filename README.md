@@ -33,6 +33,7 @@ import requests
 # - Websites may block bots or change HTML structure
 # - Must comply with website Terms of Service
 
+
 def download_pinterest_page():
     url = "https://www.pinterest.com/?boardId=335377572190761283"
     headers = {
