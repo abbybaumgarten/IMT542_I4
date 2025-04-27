@@ -3,14 +3,6 @@
 """
 Access XML data via API (HTTP) from the European Central Bank
 
-Pros:
-- Structured and machine-readable
-- Good for legacy systems and government datasets
-
-Cons:
-- XML is verbose compared to JSON
-- Requires parsing with an XML library
-
 Instructions:
 1. Run this in Google Colab or locally.
 2. No authentication needed for this public API.
